@@ -29,11 +29,13 @@ export const memoryFields = {
     }),
   ),
 };
+
 export const memoryTables = {
   memories: defineTable(memoryFields)
     .index('embeddingId', ['embeddingId'])
     .index('playerId_type', ['playerId', 'data.type'])
     .index('playerId', ['playerId']),
+    
   memoryEmbeddings: defineTable({
     playerId,
     embedding: v.array(v.float64()),

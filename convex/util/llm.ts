@@ -6,9 +6,10 @@ export const LLM_CONFIG = {
   ollama: true,
   url: 'http://127.0.0.1:11434',
   // chatModel: 'llama3' as const,
-  chatModel: 'qwen2:7b' as const,
-  // embeddingModel: 'mxbai-embed-large',
-  embeddingModel: 'znbang/bge:large-zh-v1.5-q8_0',
+  // chatModel: 'qwen2:7b' as const,
+  chatModel: 'deepseek-v2:16b' as const,
+  embeddingModel: 'mxbai-embed-large',
+  // embeddingModel: 'znbang/bge:large-zh-v1.5-q8_0', //中文支持较好
   embeddingDimension: 1024,
   stopWords: ['<|eot_id|>'],
   apiKey: () => undefined,

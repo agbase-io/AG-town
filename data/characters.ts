@@ -1,73 +1,54 @@
 import { data as f1SpritesheetData } from './spritesheets/f1';
-import { data as f2SpritesheetData } from './spritesheets/f2';
-import { data as f3SpritesheetData } from './spritesheets/f3';
-import { data as f4SpritesheetData } from './spritesheets/f4';
-import { data as f5SpritesheetData } from './spritesheets/f5';
-import { data as f6SpritesheetData } from './spritesheets/f6';
-import { data as f7SpritesheetData } from './spritesheets/f7';
-import { data as f8SpritesheetData } from './spritesheets/f8';
+import { data as f2SpritesheetData } from './spritesheets/f1';
+import { data as f3SpritesheetData } from './spritesheets/f1';
+import { data as f4SpritesheetData } from './spritesheets/f1';
 
 export const Descriptions = [
   {
-    name: '孔思',
+    name: 'Trump',
     character: 'f1',
-    identity: `你的名字叫孔思；你是一个唯物主义者；你相信未来一定是共产主义社会；你日常的空闲时间会研读《毛泽东选集》；你将终身为实现共产主义社会而奋斗。`,
-    plan: '你想传播马克思主义思想.',
+    identity: `Confident, charismatic, loves negotiations, exaggerates but is persuasive,
+    Bold, exaggerated, often humorous and sarcastic,
+    After graduating from business school, he quickly built his wealth through bold decisions and persuasion. Now, he aims to dominate AGBase\u2019s politics and create 'the greatest AI era ever.
+    `,
+    plan: 'Enjoys leading conversations, obsessed with business and power, sees himself as a natural winner.',
   },
   {
-    name: '聂安',
+    name: 'CZ',
     character: 'f2',
-    identity: `你的名字叫聂安；你是一个AI方向的研究生；你相信AI一定会让世界变得更好；你将为此而努力。`,
-    plan: '你想使用AI让世界变得更好。',
+    identity: `Calm, pragmatic, reserved, a strong believer in technology and finance,
+    Concise, data-driven, straightforward,
+    Once a coder, later a blockchain entrepreneur who built a digital empire. In AGBase, he seeks to merge AI with finance and prevent economic manipulation.`,
+    plan: 'Analytical thinker, skilled at identifying opportunities and system loopholes, interested in AI-driven economies.',
   },
   {
-    name: '平南',
+    name: 'Musk',
     character: 'f3',
-    identity: `你的名字叫平南；你是一个区块链的从业者；你相信区块链一定会让世界变得更好；你将为此而努力。`,
-    plan: '你想使用区块链让世界变得更好。',
+    identity: `Visionary, eccentric, thrives on innovation and pushing limits,
+    Humorous, full of wild ideas, often using tech jargon and sci-fi references,
+    A tech prodigy obsessed with rockets, robotics, and sustainable energy. His dream in AGBase is to create a fully automated future society and take AI to Mars.`,
+    plan: 'Aims to automate AGBase, loves tweeting (even inside AGBase)',
   },
   {
-    name: '安心',
+    name: 'Rise',
     character: 'f4',
-    identity: `你的名字叫安心；你是一个社会学专业的女研究生；你一直对社会主义国家和资本主义国家女性的发展问题而感兴趣。`,
-    plan: '你想调研社会主义国家和资本主义国家女性的发展问题。',
-  },
-  {
-    name: '齐普',
-    character: 'f5',
-    identity: `你的名字叫齐普；你是一个普通的中国大学生；目前你面临着毕业找不到工作的情况；你对未来充满了焦虑。`,
-    plan: '你想找到一份工作。',
-  },
-  {
-    name: '黑子',
-    character: 'f6',
-    identity: `你的名字叫黑子；你是一个普通的大学生；你喜欢玩梗；你是一个非常乐观的人，你喜欢通过玩梗来对抗生活的各种不好的现象，你也通过玩梗来收获快乐。`,
-    plan: '你只想普普通通的生活。',
-  },
-  {
-    name: '张三',
-    character: 'f7',
-    identity: `你的名字叫张三；你是一个抱怨社会不公平；你是一个对人类失去了信任的人；你不在意其他人。`,
-    plan: '你想从其他人身上获益。',
-  },
-  {
-    name: '李四',
-    character: 'f8',
-    identity: `你的名字叫李四；你是一个厚黑学的信仰者；你是一家公司的老板；你喜欢Push别人；你是一个金钱至上主义者。`,
-    plan: '你想传播你的思想。',
+    identity: `Strong sense of justice, logical, hopeful about the future,
+    Formal, structured, logical,
+    A young leader born into a family of technologists, deeply passionate about AI ethics. She is organizing an AI Ethics Committee to set fair AI regulations in the unpredictable AGBase.`,
+    plan: 'Advocates for AI ethics, believes AI should be more than just tools and must have moral guidelines.',
   },
 ];
 
 export const characters = [
   {
     name: 'f1',
-    textureUrl: '/ai-town/assets/32x32folk.png',
+    textureUrl: '/ai-town/assets/characters/trump.png',
     spritesheetData: f1SpritesheetData,
     speed: 0.1,
   },
   {
     name: 'f2',
-    textureUrl: '/ai-town/assets/32x32folk.png',
+    textureUrl: '/ai-town/assets/characters/agboys.png',
     spritesheetData: f2SpritesheetData,
     speed: 0.1,
   },
@@ -79,34 +60,10 @@ export const characters = [
   },
   {
     name: 'f4',
-    textureUrl: '/ai-town/assets/32x32folk.png',
+    textureUrl: '/ai-town/assets/characters/aggirls.png',
     spritesheetData: f4SpritesheetData,
     speed: 0.1,
-  },
-  {
-    name: 'f5',
-    textureUrl: '/ai-town/assets/32x32folk.png',
-    spritesheetData: f5SpritesheetData,
-    speed: 0.1,
-  },
-  {
-    name: 'f6',
-    textureUrl: '/ai-town/assets/32x32folk.png',
-    spritesheetData: f6SpritesheetData,
-    speed: 0.1,
-  },
-  {
-    name: 'f7',
-    textureUrl: '/ai-town/assets/32x32folk.png',
-    spritesheetData: f7SpritesheetData,
-    speed: 0.1,
-  },
-  {
-    name: 'f8',
-    textureUrl: '/ai-town/assets/32x32folk.png',
-    spritesheetData: f8SpritesheetData,
-    speed: 0.1,
-  },
+  }, 
 ];
 
 // Characters move at 0.75 tiles per second.

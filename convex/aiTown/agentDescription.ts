@@ -24,4 +24,5 @@ export const serializedAgentDescription = {
   identity: v.string(),
   plan: v.string(),
 };
+
 export type SerializedAgentDescription = ObjectType<typeof serializedAgentDescription>;

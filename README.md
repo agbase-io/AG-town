@@ -1,4 +1,4 @@
-# AI Town 🏠💻💌
+# AGBase 🏠💻💌
 
 [Live Demo](https://www.convex.dev/ai-town)
 
@@ -6,9 +6,9 @@
 
 <img width="1454" alt="Screen Shot 2023-08-14 at 10 01 00 AM" src="https://github.com/a16z-infra/ai-town/assets/3489963/a4c91f17-23ed-47ec-8c4e-9f9a8505057d">
 
-AI Town is a virtual town where AI characters live, chat and socialize.
+AGBase is a virtual town where AI characters live, chat and socialize.
 
-This project is a deployable starter kit for easily building and customizing your own version of AI town.
+This project is a deployable starter kit for easily building and customizing your own version of AGBase.
 Inspired by the research paper [_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf).
 
 The primary goal of this project, beyond just being a lot of fun to work on,
@@ -287,7 +287,7 @@ Update the browser list:
 npx update-browserslist-db@latest
 ```
 
-Launch AI Town:
+Launch AGBase:
 ```bash
 npm run dev
 ```
@@ -300,7 +300,7 @@ Launch the Convex backend server:
     ```bash
     ./convex-local-backend
     ```
-And in the second terminal simply Configuring Socat, Launch AI Town.
+And in the second terminal simply Configuring Socat, Launch AGBase.
 
 ## Windows Installation
 
@@ -370,9 +370,9 @@ Test if it's working:
 
 If it responds OK, the Ollama API is accessible.
 
-### 9. Clone the AI Town Repository
+### 9. Clone the AGBase Repository
 
-Clone the AI Town repository from GitHub:
+Clone the AGBase repository from GitHub:
 
     git clone https://github.com/a16z-infra/ai-town.git
     cd ai-town
@@ -404,15 +404,15 @@ Set the Ollama host in Convex:
 
     just convex env set OLLAMA_HOST http://localhost:11434
 
-### 14. Launch AI Town
+### 14. Launch AGBase
 
-Finally, launch AI Town:
+Finally, launch AGBase:
 
     npm run dev
 
-Visit `http://localhost:5173` in your browser to see AI Town in action.
+Visit `http://localhost:5173` in your browser to see AGBase in action.
 
-### Relaunching AI Town on windows WSL : 
+### Relaunching AGBase on windows WSL : 
 
 If you need to restart the services:
 
@@ -425,7 +425,7 @@ If you need to restart the services:
     ./convex-local-backend
 
 In another terminal : 
-3. Launch AI Town:
+3. Launch AGBase:
 
     npm run dev
 
