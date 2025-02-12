@@ -163,14 +163,22 @@ export async function leaveConversationMessage(
       conversationId,
     },
   );
+  // const prompt = [
+  //   `你是${player.name}, 你此刻正在与 ${otherPlayer.name} 交谈。`,
+  //   `你已经决定不再回答这个问题，并想礼貌地告诉对方你要离开了。`,
+  // ];
   const prompt = [
-    `你是${player.name}, 你此刻正在与 ${otherPlayer.name} 交谈。`,
-    `你已经决定不再回答这个问题，并想礼貌地告诉对方你要离开了。`,
+    `You are ${player.name}, and you're currently in a conversation with ${otherPlayer.name}.`,
+    `You've decided to leave the question and would like to politely tell them you're leaving the conversation.`,
   ];
   prompt.push(...agentPrompts(otherPlayer, agent, otherAgent ?? null));
+  // prompt.push(
+  //   `以下是你和 ${otherPlayer.name} 之间的当前聊天记录。`,
+  //   `你想怎么告诉他们你要离开？请简短的回答，不超过50个汉字。`,
+  // );
   prompt.push(
-    `以下是你和 ${otherPlayer.name} 之间的当前聊天记录。`,
-    `你想怎么告诉他们你要离开？请简短的回答，不超过50个汉字。`,
+    `Below is the current chat history between you and ${otherPlayer.name}.`,
+    `How would you like to tell them that you're leaving? Your response should be brief and within 200 characters.`,
   );
   const llmMessages: LLMMessage[] = [
     {

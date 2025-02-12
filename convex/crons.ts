@@ -8,8 +8,8 @@ import { v } from 'convex/values';
 const crons = cronJobs();
 
 crons.interval(
-  'stop inactive worlds',
-  { seconds: IDLE_WORLD_TIMEOUT / 1000 },
+ 'stop inactive worlds',
+  { seconds: IDLE_WORLD_TIMEOUT },
   internal.world.stopInactiveWorlds,
 );
 

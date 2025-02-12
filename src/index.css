@@ -40,13 +40,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .game-background {
   background: linear-gradient(rgba(41, 41, 41, 0.8), rgba(41, 41, 41, 0.8)),
-    url(../assets/background.webp);
+    url(../assets/mars_background.jpg);
   background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,12 +61,32 @@ body {
   filter: drop-shadow(0px 0.08em 0px #6e2146);
 }
 
-.game-frame {
+/* .game-frame {
   border-width: 36px;
   border-image-source: url(../assets/ui/frame.svg);
   border-image-repeat: stretch;
   border-image-slice: 25%;
+} */
+.game-frame {
+  border: 10px solid #8B0000;
+  /* 深红色边框 */
+  background: linear-gradient(180deg, #662222, #331111);
+  /* 火星红渐变 */
+  box-shadow: 0px 0px 20px rgba(255, 69, 0, 0.8);
+  /* 橙色外光 */
 }
+
+.right-panel {
+  background: rgba(50, 15, 15, 0.9);
+  /* 暗红背景 */
+  border-left: 5px solid #FF4500;
+  /* 橙色高亮边框 */
+  color: #FFD700;
+  /* 金色文字 */
+  font-family: 'Orbitron', sans-serif;
+  /* 未来感字体 */
+}
+
 
 .game-progress-bar {
   border: 5px solid rgb(23, 20, 33);
@@ -155,8 +174,8 @@ body {
     font-size: 16px;
   }
 
-  .button > div,
-  .button > span {
+  .button>div,
+  .button>span {
     vertical-align: top;
     line-height: 1;
   }

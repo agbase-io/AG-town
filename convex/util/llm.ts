@@ -2,39 +2,42 @@
 
 export const LLM_CONFIG = {
   /* Ollama (local) config:
-   */
   ollama: true,
   url: 'http://127.0.0.1:11434',
   // chatModel: 'llama3' as const,
-  // chatModel: 'qwen2:7b' as const,
-  chatModel: 'deepseek-v2:16b' as const,
-  embeddingModel: 'mxbai-embed-large',
-  // embeddingModel: 'znbang/bge:large-zh-v1.5-q8_0', //中文支持较好
+  chatModel: 'qwen2:7b' as const,
+  // embeddingModel: 'mxbai-embed-large',
+  embeddingModel: 'znbang/bge:large-zh-v1.5-q8_0',
   embeddingDimension: 1024,
   stopWords: ['<|eot_id|>'],
   apiKey: () => undefined,
   // embeddingModel: 'llama3',
   // embeddingDimension: 4096,
+  */
 
   /* Together.ai config:
+   */
   ollama: false,
   url: 'https://api.together.xyz',
-  chatModel: 'meta-llama/Llama-3-8b-chat-hf',
+ // chatModel: 'meta-llama/Llama-3-8b-chat-hf',
+  chatModel: 'meta-llama/Llama-3.3-70B-Instruct-Turbo',
   embeddingModel: 'togethercomputer/m2-bert-80M-8k-retrieval',
-  embeddingDimension: 768,
+  embeddingDimension: 1536,
   stopWords: ['<|eot_id|>'],
   apiKey: () => process.env.TOGETHER_API_KEY ?? process.env.LLM_API_KEY,
-   */
+  
 
   /* OpenAI config:
+ 
   ollama: false,
-  url: 'https://api.openai.com',
-  chatModel: 'gpt-4o-mini',
+  // url: 'https://api.openai.com',
+  url: 'https://api.evo4ai.com',
+  chatModel: 'gpt-3.5-turbo',
   embeddingModel: 'text-embedding-ada-002',
   embeddingDimension: 1536,
   stopWords: [],
   apiKey: () => process.env.OPENAI_API_KEY ?? process.env.LLM_API_KEY,
-   */
+*/
 };
 
 function apiUrl(path: string) {

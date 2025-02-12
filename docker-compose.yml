@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  ai-town:
+  agbase:
     build: .
     ports:
       - "5173:5173"
@@ -11,8 +11,8 @@ services:
       - /usr/src/app/node_modules
       - ./data:/usr/src/app/data
     networks:
-      - ai-town-network
+      - agbase-network
 
 networks:
-  ai-town-network:
+  agbase-network:
     driver: bridge

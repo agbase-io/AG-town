@@ -1,0 +1,47 @@
+/* marsTheme.css */
+:root {
+  --mars-red-dark: #8B2C1A;
+  --mars-orange: #D14F32;
+  --mars-light-gray: #D0C7B2;
+  --mars-dark-gray: #2F2B28;
+  --mars-glow: rgba(255, 89, 34, 0.8);
+  /* Glowing orange effect */
+}
+
+.game-frame {
+  background: linear-gradient(180deg, #8B2C1A 0%, #D14F32 100%);
+}
+
+.bg-mars-red-dark {
+  background-color: var(--mars-red-dark);
+}
+
+.bg-mars-dark-gray {
+  background-color: var(--mars-dark-gray);
+}
+
+.right-column {
+  background-color: var(--mars-dark-gray);
+  color: var(--mars-light-gray);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--mars-glow);
+}
+
+.pixi-stage {
+  background: linear-gradient(to top, #9e5e30, #4b1a0c);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--mars-light-gray);
+}
+
+.glowing-element {
+  color: var(--mars-orange);
+  text-shadow: 0 0 10px var(--mars-orange), 0 0 20px var(--mars-orange);
+}

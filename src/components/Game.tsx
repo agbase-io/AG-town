@@ -67,9 +67,10 @@ https://github.com/michalochman/react-pixi-fiber/issues/145#issuecomment-5315492
         </div>
         {/* Right column area */}
         <div
-          className="flex flex-col overflow-y-auto shrink-0 px-4 py-6 sm:px-6 lg:w-96 xl:pr-6 border-t-8 sm:border-t-0 sm:border-l-8 border-brown-900  bg-brown-800 text-brown-100"
+          className="flex flex-col overflow-y-auto shrink-0 px-4 py-6 sm:px-6 lg:w-96 xl:pr-6 border-t-8 sm:border-t-0 sm:border-l-8 border-red-900 bg-red-950 text-yellow-300"
           ref={scrollViewRef}
         >
+
           <PlayerDetails
             worldId={worldId}
             engineId={engineId}
@@ -83,3 +84,61 @@ https://github.com/michalochman/react-pixi-fiber/issues/145#issuecomment-5315492
     </>
   );
 }
+
+// import { useState } from 'react';
+// import { useConvex, useQuery } from 'convex/react';
+// import { api } from '../../convex/_generated/api';
+// import { Id } from '../../convex/_generated/dataModel';
+// import { useWorldHeartbeat } from '../hooks/useWorldHeartbeat.ts';
+// import { useHistoricalTime } from '../hooks/useHistoricalTime.ts';
+// import { useServerGame } from '../hooks/serverGame.ts';
+// import GameArea from './GameArea.tsx';
+// import RightColumnArea from './RightColumnArea.tsx';
+
+// export const SHOW_DEBUG_UI = !!import.meta.env.VITE_SHOW_DEBUG_UI;
+
+// export default function Game() {
+//   const convex = useConvex();
+//   const [selectedElement, setSelectedElement] = useState<{
+//     kind: 'player';
+//     id: string;
+//   }>();
+
+//   const worldStatus = useQuery(api.world.defaultWorldStatus);
+//   // const worldId = worldStatus?.worldId;
+//   const worldId = worldStatus?.worldId as Id<'worlds'>; // 强制类型转换
+//   const engineId = worldStatus?.engineId as Id<'engines'>;
+
+//   const game = useServerGame(worldId);
+
+//   // Send a periodic heartbeat to our world to keep it alive.
+//   useWorldHeartbeat();
+
+//   const worldState = useQuery(api.world.worldState, worldId ? { worldId } : 'skip');
+//   const { historicalTime, timeManager } = useHistoricalTime(worldState?.engine);
+
+//   if (!worldId || !engineId || !game) {
+//     return null;
+//   }
+
+//   return (
+//     <>
+//       <GameArea
+//         convex={convex}
+//         game={game}
+//         worldId={worldId}
+//         engineId={engineId}
+//         historicalTime={historicalTime}
+//         setSelectedElement={setSelectedElement}
+//         timeManager={timeManager}
+//       />
+//       <RightColumnArea
+//         worldId={worldId}
+//         engineId={engineId}
+//         game={game}
+//         selectedElement={selectedElement}
+//         setSelectedElement={setSelectedElement}
+//       />
+//     </>
+//   );
+// }
