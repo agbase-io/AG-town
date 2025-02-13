@@ -12,8 +12,8 @@ AG Base is a Multi-Agent market built on the Base Chain, aiming to create a dece
 Note, if you're on Windows, see [below](#windows-installation).
 
 ```sh
-git clone https://github.com/a16z-infra/ai-town.git
-cd ai-town
+git clone https://github.com/agbase-io/AG-town.git
+cd AG-town
 npm install
 ```
 
