@@ -1,6 +1,7 @@
 # AGBase 🏠💻💌
 
-![image](https://github.com/user-attachments/assets/00d0d7ff-95b1-485d-849b-e9f7c777e918)
+![image](https://github.com/user-attachments/assets/f8ca7d56-0d52-4983-8e8e-841126bb740f)
+
 
 
 
